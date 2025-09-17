@@ -14,10 +14,10 @@ const instrumentSerif = Instrument_Serif({
   weight: "400", 
 }) 
 
-export const metadata: Metadata = { 
-  title: "v0 App", 
-  description: "Created with v0", 
-  generator: "v0.app", 
+export const metadata: Metadata = {
+  title: "LogoS - Logo Gallery",
+  description: "Explore beautiful interactive logo designs",
+  generator: "Next.js",
 } 
 
 export default function RootLayout({ 
