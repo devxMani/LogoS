@@ -1,0 +1,37 @@
+/* Landing page minimalist design */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Simple fade-in animation for the text */
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Subtle hover effects */
+.button-minimal:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-1px);
+  transition: all 0.3s ease;
+}
+
+/* Ensure text is crisp and clear */
+h1 {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
