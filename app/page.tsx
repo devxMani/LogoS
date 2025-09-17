@@ -10,11 +10,11 @@ const instrumentSerif = Instrument_Serif({
 
 export default function Page() {
   return (
-    <main className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <main className="relative min-h-screen flex flex-col overflow-hidden">
       <GradientBackground />
       <div className="absolute inset-0 -z-10 bg-black/20" />
 
-      <section className="px-6 text-center flex flex-col items-center">
+      <section className="flex-1 px-6 text-center flex flex-col items-center justify-center">
         <h1
           className={`${instrumentSerif.className} text-white text-center text-balance font-normal tracking-tight text-7xl mb-16`}
         >
@@ -31,6 +31,13 @@ export default function Page() {
           </button>
         </Link>
       </section>
+
+      {/* Made by Mani */}
+      <footer className="px-6 pb-8 text-center">
+        <p className={`${instrumentSerif.className} text-white/60 text-lg font-normal tracking-wide`}>
+          Made by Mani
+        </p>
+      </footer>
     </main>
   )
 }
